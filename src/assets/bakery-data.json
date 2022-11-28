@@ -1,0 +1,99 @@
+[
+  {
+    "name": "Wassily Chair",
+    "category": "Chair",
+    "Designer": "Marcel Breuer",
+    "price": 2849,
+    "image": "../images/Wassily Chair.jpeg",
+    "other": ""
+  },
+  {
+    "name": "Armless Cesca Chair",
+    "category": "Chair",
+    "Designer": "Marcel Breuer",
+    "price": 917,
+    "image": "../images/Armless Cesca Chair.png",
+    "other": ""
+  },
+  {
+    "name": "Barcelona Chair",
+    "category": "Chair",
+    "Designer": "Ludwig Mies van der Rohe",
+    "price": 6379,
+    "image": "../images/Barcelona Chair.jpeg",
+    "other": ""
+  },
+  {
+    "name": "MR Chair",
+    "category": "Chair",
+    "Designer": "Ludwig Mies van der Rohe",
+    "price": 1394,
+    "image": "../images/MR Chair.jpeg",
+    "other": ""
+  },
+  {
+    "name": "Tea Infuser",
+    "category": "Home Goods",
+    "Designer": "Marianne Brandt",
+    "price": 8000,
+    "image": "../images/Tea Infuser.jpeg",
+    "other": ""
+  },
+  {
+    "name": "MT8 Lamp",
+    "category": "Light",
+    "Designer": "Wilhelm Wagenfeld",
+    "price": 1750,
+    "image": "../images/MT8 Lamp.png",
+    "other": ""
+  },
+  {
+    "name": "Bauhaus Chess Set",
+    "category": "Home Goods",
+    "Designer": "Josef Hartwig",
+    "price": 678,
+    "image": "../images/Bauhaus Chess Set.jpeg",
+    "other": ""
+  },
+  {
+    "name": "Bauhaus Rug",
+    "category": "Home Goods",
+    "Designer": "Gertrud Arndt",
+    "price": 1500,
+    "image": "../images/Bauhaus Rug.jpeg",
+    "other": ""
+  },
+  {
+    "name": "F51 Armchair",
+    "category": "Chair",
+    "Designer": "Walter Gropius",
+    "price": 3000,
+    "image": "../images/F51 Armchair.jpeg",
+    "other": ""
+  },
+  {
+    "name": "Writing Desk S 285",
+    "category": "Table",
+    "Designer": "Marcel Breuer",
+    "price": 6540,
+    "image": "../images/Writing Desk S 285.jpeg",
+    "other": ""
+  },
+  {
+    "name": "Kubus Stacking Containers",
+    "category": "Home Goods",
+    "Designer": "Wilhelm Wagenfeld ",
+    "price": 300,
+    "image": "../images/Kubus Stacking Containers.jpeg",
+    "other": ""
+  },
+  {
+    "name": "Laccio Coffee Table",
+    "category": "Table",
+    "Designer": "Marcel Breuer",
+    "price": 799,
+    "image": "../images/Laccio Coffee Table.jpeg",
+    "other": ""
+  }
+ 
+]
