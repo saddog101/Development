@@ -2,8 +2,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "./App.css";
 import { useEffect, useState } from "react";
 import Dropdown from 'react-bootstrap/Dropdown';
-import bakeryData from "./assets/bakery-data.json";
-import BakeryItem from "./components/BakeryItem.js";
+import bauhausData from "./assets/bauhaus-data.json";
+import BauhausItem from "./components/BauhausItem.js";
 import ToggleButton from 'react-bootstrap/ToggleButton';
 import Button from 'react-bootstrap/Button';
 
@@ -91,7 +91,7 @@ function App() {
 
   }
   
-  const filteredData = bakeryData.filter(matchesFilterType);
+  const filteredData = bauhausData.filter(matchesFilterType);
 
   const selectFilterDesigner = eventKey =>{
     setDesigner(eventKey);
@@ -101,7 +101,7 @@ function App() {
   useEffect(() => {
     const loadFavorite = checked =>{
       if(checked){
-        const newList = bakeryData.filter(isFav);
+        const newList = bauhausData.filter(isFav);
         setData(newList);
         
       } else{
@@ -235,7 +235,7 @@ function App() {
       </div>
       <div className="wrapper">
       {data.map((item, index) => ( // TODO: map bakeryData to BakeryItem components
-        <BakeryItem key={index} item={item} index={index} addToCart ={addToCart} /> // replace with BakeryItem component
+        <BauhausItem key={index} item={item} index={index} addToCart ={addToCart} /> // replace with BakeryItem component
       ))}
       </div>
       

@@ -1,7 +1,7 @@
 // TODO: create a component that displays a single bakery item
 import "./BakeryItem.css";
 
-export default function BakeryItem({item, index, addToCart}){
+export default function BauhausItem({item, addToCart}){
     
     return(
         <div className="card">

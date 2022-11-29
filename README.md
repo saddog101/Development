@@ -1,15 +1,11 @@
 # Development
 
-### Link to Deployed Website
-If you used the stencil code, this is `https://<your GitHub username>.github.io/<name of your repository>`
+1. The goal of the application is to provide an aggregated hub of all timeless and masterfully designed Bauhaus objects. Its value is to provide Bauhaus enthusiasts and people who have a taste for design easy access to browse Bauhaus items and celebrate this revolutionary school of design.
+It provides handy-functionalities such as filter by object category, filter by designer, sort by price, or add/remove from favorite. In addition, it displays the total value of the favorite items and it has shortcut to clear all filtering and sorting criteria applied.
 
-### Goal and Value of the Application
+2. Link: https://saddog101.github.io/Development/
 
-### Usability Principles Considered
+3. The component used in the assignment is BauhausItem, it takes in an item from the data and function addToCart as props. The component takes the information of the item to construct cards in the website and use the addToCart function to handle changes when manipulation relating to the favorite is initiated. Other than that, the main component App.js contains various state variables. The main ones are: myPrice for the aggregate price of favorite items, checked to track the toggle state of the "Show Favorite" button, data to track the items displayed, sortType, type, and designer to keep track of the filter parameters.
 
-### Organization of Components
-
-### How Data is Passed Down Through Components
-
-### How the User Triggers State Changes
+4. The biggest design principle kept in mind during the process is definitively C.R.A.P: Contrast, Repitition, Alignment, and Proximity. Contrast, I make sure to establish contrast between vital and secondary information with font sizes, font weight, and typeface to ensure a great hierarchy is established and that the user can distinguish key information right away. Repitition, I ensured the card is consistent informat accross the board to establish a unified look and better learnability for the users. Alignment, the alignment is ensured with css to achieve a clean look to create a easy reading pattern for the users. Lastly, proximity, for the buttons, I set distance apart from the filter buttons and the sort button to distinguish their different functionalities. Further, I put "Show favorite" button on the end of the row to emphasize its difference in function. This will ensure that buttons of the same function is closer to each other, which makes it easier for users to navigate and identify.
 
