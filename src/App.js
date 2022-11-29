@@ -9,13 +9,6 @@ import Button from 'react-bootstrap/Button';
 
 
 
-/* ####### DO NOT TOUCH -- this makes the image URLs work ####### */
-
-/*bakeryData.forEach((item) => {
-  item.image = process.env.PUBLIC_URL + "/" + item.image;
-});*/
-/* ############################################################## */
-
 function App() {
   // TODO: use useState to create a state variable to hold the state of the cart
   /* add your cart state code here */
