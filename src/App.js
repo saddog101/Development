@@ -167,7 +167,7 @@ function App() {
       <div className="dropdowns">
         <Dropdown onSelect={selectFilterType}>
         <Dropdown.Toggle variant="light" id="dropdown-basic">
-          Category
+          Category: <strong>{type} </strong>
         </Dropdown.Toggle>
 
         <Dropdown.Menu>
@@ -180,7 +180,7 @@ function App() {
 
       <Dropdown onSelect={selectFilterDesigner}>
         <Dropdown.Toggle variant="light" id="dropdown-basic">
-          Designer  
+          Designer: <strong>{designer} </strong>
         </Dropdown.Toggle>
 
         <Dropdown.Menu>
@@ -199,7 +199,7 @@ function App() {
       <div className='sort'>
         <Dropdown onSelect={selectSort}>
           <Dropdown.Toggle variant="light" id="dropdown-basic">
-            Sort  
+            Sort
           </Dropdown.Toggle>
 
           <Dropdown.Menu>
@@ -235,7 +235,7 @@ function App() {
       </div>
       <div className="wrapper">
       {data.map((item, index) => ( // TODO: map bakeryData to BakeryItem components
-        <BauhausItem key={index} item={item} index={index} addToCart ={addToCart} /> // replace with BakeryItem component
+        <BauhausItem key={index} item={item} addToCart ={addToCart} /> // replace with BakeryItem component
       ))}
       </div>
       
