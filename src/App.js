@@ -10,9 +10,10 @@ import Button from 'react-bootstrap/Button';
 
 
 /* ####### DO NOT TOUCH -- this makes the image URLs work ####### */
-bakeryData.forEach((item) => {
+
+/*bakeryData.forEach((item) => {
   item.image = process.env.PUBLIC_URL + "/" + item.image;
-});
+});*/
 /* ############################################################## */
 
 function App() {
