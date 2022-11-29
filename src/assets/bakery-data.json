@@ -4,7 +4,7 @@
     "category": "Chair",
     "Designer": "Marcel Breuer",
     "price": 2849,
-    "image": "../images/Wassily Chair.jpeg",
+    "image": "images/Wassily Chair.jpeg",
     "other": ""
   },
   {
@@ -12,7 +12,7 @@
     "category": "Chair",
     "Designer": "Marcel Breuer",
     "price": 917,
-    "image": "../images/ArmlessCescaChair.png",
+    "image": "images/ArmlessCescaChair.png",
     "other": ""
   },
   {
@@ -20,7 +20,7 @@
     "category": "Chair",
     "Designer": "Ludwig Mies van der Rohe",
     "price": 6379,
-    "image": "../images/Barcelona Chair.jpeg",
+    "image": "images/Barcelona Chair.jpeg",
     "other": ""
   },
   {
@@ -28,7 +28,7 @@
     "category": "Chair",
     "Designer": "Ludwig Mies van der Rohe",
     "price": 1394,
-    "image": "../images/MR Chair.jpeg",
+    "image": "images/MR Chair.jpeg",
     "other": ""
   },
   {
@@ -36,7 +36,7 @@
     "category": "Home Goods",
     "Designer": "Marianne Brandt",
     "price": 8000,
-    "image": "../images/Tea Infuser.jpeg",
+    "image": "images/Tea Infuser.jpeg",
     "other": ""
   },
   {
@@ -44,7 +44,7 @@
     "category": "Light",
     "Designer": "Wilhelm Wagenfeld",
     "price": 1750,
-    "image": "../images/MT8 Lamp.png",
+    "image": "images/MT8 Lamp.png",
     "other": ""
   },
   {
@@ -52,7 +52,7 @@
     "category": "Home Goods",
     "Designer": "Josef Hartwig",
     "price": 678,
-    "image": "../images/Bauhaus Chess Set.jpeg",
+    "image": "images/Bauhaus Chess Set.jpeg",
     "other": ""
   },
   {
@@ -60,7 +60,7 @@
     "category": "Home Goods",
     "Designer": "Gertrud Arndt",
     "price": 1500,
-    "image": "../images/Bauhaus Rug.jpeg",
+    "image": "images/Bauhaus Rug.jpeg",
     "other": ""
   },
   {
@@ -68,7 +68,7 @@
     "category": "Chair",
     "Designer": "Walter Gropius",
     "price": 3000,
-    "image": "../images/F51 Armchair.jpeg",
+    "image": "images/F51 Armchair.jpeg",
     "other": ""
   },
   {
@@ -76,7 +76,7 @@
     "category": "Table",
     "Designer": "Marcel Breuer",
     "price": 6540,
-    "image": "../images/Writing Desk S 285.jpeg",
+    "image": "images/Writing Desk S 285.jpeg",
     "other": ""
   },
   {
@@ -84,7 +84,7 @@
     "category": "Home Goods",
     "Designer": "Wilhelm Wagenfeld ",
     "price": 300,
-    "image": "../images/Kubus Stacking Containers.jpeg",
+    "image": "images/Kubus Stacking Containers.jpeg",
     "other": ""
   },
   {
@@ -92,7 +92,7 @@
     "category": "Table",
     "Designer": "Marcel Breuer",
     "price": 799,
-    "image": "../images/Laccio Coffee Table.jpeg",
+    "image": "images/Laccio Coffee Table.jpeg",
     "other": ""
   }
  
