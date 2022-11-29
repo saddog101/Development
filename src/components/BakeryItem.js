@@ -13,7 +13,15 @@ export default function BakeryItem({item, index, addToCart}){
 
 
             </div>
-            <button className ='card-btn' onClick ={()=>addToCart(item, item.price)}>Add to Favorite</button>
+
+
+           
+
+            {item.other!== "fav" ? (
+               <button className ='card-btn' onClick ={()=>addToCart(item, item.price)}>Add to Favorite</button>
+              ) : (
+                <button className ='card-btn-fav' onClick ={()=>addToCart(item, item.price)}>Remove from Favorite</button>
+            )}
             
         </div>
     )

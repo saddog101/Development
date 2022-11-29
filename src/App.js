@@ -5,6 +5,7 @@ import Dropdown from 'react-bootstrap/Dropdown';
 import bakeryData from "./assets/bakery-data.json";
 import BakeryItem from "./components/BakeryItem.js";
 import ToggleButton from 'react-bootstrap/ToggleButton';
+import Button from 'react-bootstrap/Button';
 
 
 
@@ -24,10 +25,21 @@ function App() {
   const [data, setData] = useState([]);
   const [sortType, setSort] = useState("Featured");
   const [placeholder, setPlace] = useState([]);
+  const [favList, setFav] = useState([]);
+  const [myName, setName] = useState("");
 
   function addToCart(item, price){
-    item.other = "fav";
-    setMyPrice(myPrice + price);
+    if (item.other !== "fav"){
+      item.other = "fav";
+      setMyPrice(myPrice + price);
+      setFav([...favList, item]);
+    }else{
+      item.other = "";
+      setName(item.name);
+      setMyPrice(myPrice - price);
+      setFav(favList.filter(isItem));
+    }
+    
   } 
 
   const selectFilterType = eventKey =>{
@@ -75,6 +87,15 @@ function App() {
     }
 
   }
+
+  const isItem = item =>{
+    if(item.name === myName){
+      return true
+    }else{
+      return false
+    }
+
+  }
   
   const filteredData = bakeryData.filter(matchesFilterType);
 
@@ -86,9 +107,7 @@ function App() {
   useEffect(() => {
     const loadFavorite = checked =>{
       if(checked){
-        const myPlaceholder = [...data];
-        const newList = bakeryData.filter(isFav)
-        setPlace(myPlaceholder);
+        const newList = bakeryData.filter(isFav);
         setData(newList);
         
       } else{
@@ -98,8 +117,7 @@ function App() {
       
     }
     loadFavorite(checked);
-
-  }, [checked]);
+  }, [checked, favList]);
   
   useEffect(() => {
     const sortArray = sortType =>{
@@ -107,14 +125,17 @@ function App() {
         const sorted = filteredData.sort((item1, item2) => { return item1.price - item2.price});
         console.log(sorted);
         setData(sorted);
+        setPlace(sorted);
       } else if(sortType === "PriceB"){
         const sorted = filteredData.sort((item1, item2) => { return item2.price - item1.price});
         console.log(sorted);
         setData(sorted);
+        setPlace(sorted);
       } else{
         const sorted = filteredData;
         console.log(sorted);
         setData(sorted);
+        setPlace(sorted);
       }
       
       
@@ -123,6 +144,14 @@ function App() {
     sortArray(sortType);
 
   }, [sortType, designer, type]);
+
+  function resetAll(){
+    setType("All");
+    setDesigner("All");
+    setSort("Featured");
+    setChecked(false);
+
+  };
 
 
   
@@ -187,7 +216,9 @@ function App() {
 
           </Dropdown.Menu>
         </Dropdown>
+        
       </div>
+      <Button variant="link" className='link' onClick ={()=>resetAll()}>Clear All Criteria</Button>
 
       <div className='favorite'>
         <ToggleButton
@@ -203,6 +234,8 @@ function App() {
           
         </ToggleButton>
         <p>Total Pirce: ${myPrice}</p>
+        
+        
       </div>
       
       </div>
